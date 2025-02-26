@@ -116,6 +116,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 950119523650853487, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6773365898760441331}
+    - targetCorrespondingSourceObject: {fileID: 950119523650853487, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1024873822463583716}
   m_SourcePrefab: {fileID: 100100000, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
 --- !u!4 &6423270704755729031 stripped
 Transform:
@@ -152,3 +155,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPositionTransform: {fileID: 3607589430185271333}
+--- !u!114 &1024873822463583716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211826434967574827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce54177f5111a64c84388bbddfd90fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition:
+    x: 11
+    y: 0
+    z: 12
+  originPosition:
+    x: 11
+    y: 0
+    z: 12
+  distanceMin: 3
+  distanceMax: 10
+  randomSeed: 56
