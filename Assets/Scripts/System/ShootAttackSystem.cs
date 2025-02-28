@@ -10,7 +10,7 @@ partial struct ShootAttackSystem : ISystem
     public void OnUpdate(ref SystemState state)
     {
         EntetiesRefrences entetiesRefrences = SystemAPI.GetSingleton<EntetiesRefrences>();
-        foreach ((RefRW<LocalTransform> localTransform, RefRW<ShootAttack> shootAttack , RefRO <Target> target,RefRW<UnitMover> unitMover) in SystemAPI.Query< RefRW<LocalTransform>,RefRW<ShootAttack>,RefRO<Target>,RefRW<UnitMover>>())
+        foreach ((RefRW<LocalTransform> localTransform, RefRW<ShootAttack> shootAttack , RefRO <Target> target,RefRW<UnitMover> unitMover) in SystemAPI.Query< RefRW<LocalTransform>,RefRW<ShootAttack>,RefRO<Target>,RefRW<UnitMover>>().WithDisabled<MoveOverride>())
         {
             if(target.ValueRO.targetEntity == Entity.Null)
             {
@@ -53,6 +53,10 @@ partial struct ShootAttackSystem : ISystem
 
             RefRW<Target> bulletTarget = SystemAPI.GetComponentRW<Target>(bulletEntity);
             bulletTarget.ValueRW.targetEntity = target.ValueRO.targetEntity;
+
+            shootAttack.ValueRW.onShoot.isTriggered = true;
+            shootAttack.ValueRW.onShoot.shootFromPosition = bulletSpawnWorldPosition;
+
         } 
     }
 }

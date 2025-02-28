@@ -43,6 +43,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZombieUnit
       objectReference: {fileID: 0}
+    - target: {fileID: 1100530963039656317, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
+      propertyPath: healthAmount
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3160807130428580291, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -85,7 +89,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3816921907253388582, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
       propertyPath: range
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3816921907253388582, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
       propertyPath: targetFaction
@@ -103,7 +107,8 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 85cd5279f313d294c8d4eb59ece3cb5b, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8719280677001439742, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3160807130428580291, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
@@ -119,6 +124,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 950119523650853487, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1024873822463583716}
+    - targetCorrespondingSourceObject: {fileID: 950119523650853487, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2387592989381177424}
   m_SourcePrefab: {fileID: 100100000, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
 --- !u!4 &6423270704755729031 stripped
 Transform:
@@ -178,3 +186,18 @@ MonoBehaviour:
   distanceMin: 3
   distanceMax: 10
   randomSeed: 56
+--- !u!114 &2387592989381177424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211826434967574827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f138f544835ba42b27044a8b530a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerMax: 0.5
+  damageAmount: 10
+  colliderSize: 0

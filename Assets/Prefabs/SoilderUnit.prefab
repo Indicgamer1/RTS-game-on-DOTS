@@ -200,6 +200,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 950119523650853487, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8120653059064493491}
+    - targetCorrespondingSourceObject: {fileID: 950119523650853487, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2110463057563949612}
   m_SourcePrefab: {fileID: 100100000, guid: 79fd47d550a2eae46a21ba985140c1fd, type: 3}
 --- !u!4 &6695642283545618081 stripped
 Transform:
@@ -249,7 +252,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5c06296accaef94ca69e62b0b60ab94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerMax: 0.2
+  timerMax: 0.3
   damageAmount: 5
   attackDistance: 13
   bulletSpawnPositionTransform: {fileID: 1037093525516410325}
+--- !u!114 &2110463057563949612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8798136825684860173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c0a4cbccf3c634996a087b1d43acba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
